@@ -1,8 +1,36 @@
-{% for node in pieces_list %}
+{% assign sorted_pieces_list = pieces_list | sort:"year" | reverse %}
+{% assign genres = "chamber,electronic" | split: "," %}
+{% assign genre_text = "N/A" %}
+
+<h2 class="title">
+  {% for genre in genres %}
+  {% include function_genre_text %}
+  <a href="#{{ genre }}">
+    {{ return }}
+  </a>
+  {% if genre != genres.last %}
+  | <!-- Don't put bar at the end of the genre list -->
+  {% endif %}
+  {% endfor %}
+</h2>
+
+{% for genre in genres %}
+{% include function_genre_text %}
+{% assign genre_text = return %}
+<div id="genre">
+  <h1>
+    <div id = "{{ genre }}" style="margin-top: -32px; padding-top: 32px;"></div>
+    <hr class="hr-text" data-content="{{ genre_text }}">
+  </h1>
+</div>
+
+{% for node in sorted_pieces_list %}
+{% if genre == node.genre %}
+
 {% if group == null or group == node.group %}
 <div>
   <div style="float:left">
-    <h3> {{node.piece}} | {{node.duration}} </h3>
+    <h3> <a href="{{ node.url }}">{{node.piece}}</a> - {{node.instrumentation}} | {{node.duration}} </h3>
   </div>
   <div style="float:right">
     <h3>{{node.year}}</h3>
@@ -14,9 +42,11 @@
   <a href="{{node.score}}">Score</a>
 </div>
 <div style="text-align:justified">
-{{node.notes}}
+<p class="music_body">{{node.notes}} <hr class="music_hr"> </p>
 </div>
-  {% endif %}
+{% endif %}
+{% endif %}
+{% endfor %}
 {% endfor %}
 {% assign pieces_list = nil %}
 {% assign group = nil %}

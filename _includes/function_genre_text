@@ -1,0 +1,8 @@
+{% assign return  = "" %}
+{% if genre == "chamber" %}
+   {% assign return = "Chamber Music" %}
+{% elsif genre == "electronic" %}
+   {% assign return = "Electronic Music" %}
+{% elsif genre == "large" %}
+   {% assign return = "Large Ensemble" %}
+{% endif %}

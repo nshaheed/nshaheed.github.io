@@ -32,28 +32,51 @@
 	    {% assign group = 'navigation' %}
 	    {% include pages_list %}
 	  </div>
-          <!-- {% if site.show_downloads %} -->
-          <!--   <li class="downloads"><a href="{{ site.github.zip_url }}">ZIP</a></li> -->
-          <!--   <li class="downloads"><a href="{{ site.github.tar_url }}">TAR</a></li> -->
-          <!--   <li class="title">DOWNLOADS</li> -->
-          <!-- {% endif %} -->
         </nav>
-      </div><!-- end header -->
+      </div>
 
     <div class="wrapper">
 
       <section>
-        <!-- <div id="title"> -->
-        <div class="title">
-          <h1>{{ page.title }}</h1>
-          <!-- <p>{{ site.description | default: site.github.project_tagline }}</p> -->
-          <!-- <hr> -->
+        <div id="title">
+          <!-- <h1>{{ site.title | default: site.github.repository_name }}</h1> -->
+	  <h1>{{ page.piece }}</h1>
+	  <p>For {{ page.instrumentation }}
+	  <!-- </p> -->
+	  <!-- <p>{{ page.year }} - {{page.duration}}</p> -->
+	  <!-- <p>{{ page.duration }}</p> -->
+	  <!-- <p> -->
+	  <br>
+	    <!-- <div style="float:left"> -->
+	    {{page.duration}}
+	    <!-- &emsp;&emsp;&emsp;&emsp;&mdash;&emsp;&emsp;&emsp; -->
+	    &emsp;&emsp;&mdash;&emsp;&emsp;
+	    <!-- </div> -->
+	    <!-- <div style="float:right"> -->
+	      {{page.year}}
+	    <!-- </div> -->
+	  </p>
+          <hr>
           <!-- <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span> -->
           <!-- <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span> -->
         </div>
 
-        {{ content }}
-
+	<div>
+	  <!-- <div style="float:left"> -->
+	  <!--   <h3> {{page.piece}} - {{page.instrumentation}} | {{page.duration}} </h3> -->
+	  <!-- </div> -->
+	  <!-- <div style="float:right"> -->
+	  <!--   <h3>{{page.year}}</h3> -->
+	  <!-- </div> -->
+	</div>
+	{{page.recording}}
+	<div style="text-align:right">
+	  <!-- TODO add parts -->
+	  <a href="{{page.score}}">Score</a>
+	</div>
+	<div style="text-align:justified">
+	  <p class="music_body">{{page.notes}} <!-- <hr class="music_hr"> </p> -->
+	</div>
       </section>
 
     </div>

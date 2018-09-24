@@ -1,4 +1,5 @@
 ---
+layout: piece
 piece: Moment
 year: 2017
 duration: "5'"

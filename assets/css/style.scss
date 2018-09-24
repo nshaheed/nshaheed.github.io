@@ -25,7 +25,7 @@
   #left, #right {
       display: inline-block;
   }
-  
+
   #left {
       width: 25%;
   }
@@ -98,9 +98,75 @@
   }
 }
 
-h4 {
-  font-size: 16px;
-  line-height: 8px;
-  font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  font-weight: normal;
+#genre {
+    h1 {
+	// color: #e8e8e8; margin: 0 0 10px; font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: normal;
+	font-size: 32px;
+	// color: #333333;
+	color: #e8e8e8;
+	text-align: center;
+	// text-decoration: underline;
+	line-height: 50px;
+	// font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+	// font-weight: normal;
+    }
+}
+
+.title {
+    font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    opacity: 0.7;
+
+    h1 {
+	font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 80px;
+	line-height: 60px;
+	--text-spacing: 25px;
+	letter-spacing: var(--text-spacing);
+	text-indent: var(--text-spacing);
+    }
+}
+
+.music_hr {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.music_body {
+    padding: 0 10px;
+}
+
+.hr-text {
+    line-height: 1em;
+    margin-top: 60px;
+    position: relative;
+    outline: 0;
+    border: 0;
+    height: 1.55em;
+    opacity: 0.7;
+    display: line;
+    &:before {
+	content: '';
+	background: white;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	height: 1px;
+    }
+    &:after {
+	content: attr(data-content);
+	position: relative;
+	display: inline-block;
+	background: white;
+
+	padding: 0 .3em;
+	line-height: 1.5em;
+	// this is really the only tricky part, you need to specify the background color of the container element...
+	color: #818078;
+	background-color: #262626; // this isi #40404 less than the actual color for some reason?
+	// background-color: #2E2E2E;
+    }
 }
