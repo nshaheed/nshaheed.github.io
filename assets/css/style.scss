@@ -125,7 +125,11 @@
 	--text-spacing: 25px;
 	letter-spacing: var(--text-spacing);
 	text-indent: var(--text-spacing);
+	margin-bottom: 15px;
     }
+
+    letter-spacing: 3px;
+    text-indent: 3px;
 }
 
 .music_hr {
