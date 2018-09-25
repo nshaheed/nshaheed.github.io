@@ -1,4 +1,5 @@
-{% assign sorted_pieces_list = pieces_list | sort:"year" | reverse %}
+<!-- {% assign sorted_pieces_list = pieces_list | sort:"year" | reverse | sort:"piece" | reverse %} -->
+{% assign sorted_pieces_list = pieces_list | sort:"priority" | reverse | sort:"year" | reverse  %}
 {% assign genres = "chamber,electronic" | split: "," %}
 {% assign genre_text = "N/A" %}
 
@@ -39,7 +40,9 @@
 {{node.recording}}
 <div style="text-align:right">
   <!-- TODO add parts -->
-  <a href="{{node.score}}">Score</a>
+  {% if node.score != "" and node.score != null %}
+  <a href="{{node.score}}" target="_blank">Score</a>
+  {% endif %}
 </div>
 <div style="text-align:justified">
 <p class="music_body">{{node.notes}} <hr class="music_hr"> </p>

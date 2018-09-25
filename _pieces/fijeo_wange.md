@@ -1,6 +1,7 @@
 ---
 layout: piece
 piece: "Fijeo Wange"
+priority: 3
 year: 2018
 duration: "6'"
 instrumentation: "Two Violins"

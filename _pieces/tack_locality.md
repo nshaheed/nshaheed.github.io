@@ -1,6 +1,7 @@
 ---
 layout: piece
 piece: "Tack Locality"
+priority: 20
 year: 2018
 duration: "7-9'"
 instrumentation: "Percussion Quartet"
