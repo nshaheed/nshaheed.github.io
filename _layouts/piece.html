@@ -72,7 +72,10 @@
 	{{page.recording}}
 	<div style="text-align:right">
 	  <!-- TODO add parts -->
-	  <a href="{{page.score}}">Score</a>
+	  <!-- <a href="{{page.score}}">Score</a> -->
+	  {% if page.score != "" and page.score != null %}
+	  <a href="{{page.score}}" target="_blank">Score</a>
+	  {% endif %}
 	</div>
 	<div style="text-align:justified">
 	  <p class="music_body">{{page.notes}} <!-- <hr class="music_hr"> </p> -->
