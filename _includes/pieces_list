@@ -41,7 +41,7 @@
 <div style="text-align:right">
   <!-- TODO add parts -->
   {% if node.score != "" and node.score != null %}
-  <a href="{{node.score}}" target="_blank">Score</a>
+  <a href="{{node.score}}" target="_blank">Score and Parts</a>
   {% endif %}
 </div>
 <div style="text-align:justified">
