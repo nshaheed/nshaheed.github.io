@@ -4,7 +4,7 @@ title: Music
 group: "navigation"
 <!-- permalink: /music/ -->
 ---
-<div>
+<div> 
 {% assign pieces_list = site.pages %}
 {% assign group = 'piece' %}
 {% include pieces_list %}
