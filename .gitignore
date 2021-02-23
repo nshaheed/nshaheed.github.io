@@ -2,4 +2,5 @@ _site
 .sass-cache
 .jekyll-metadata
 *~
+*\#*\#
 /_pieces/#chaotic_substrate.md#
