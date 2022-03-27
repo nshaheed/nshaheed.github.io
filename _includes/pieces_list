@@ -1,6 +1,6 @@
 <!-- {% assign sorted_pieces_list = pieces_list | sort:"year" | reverse | sort:"piece" | reverse %} -->
 {% assign sorted_pieces_list = pieces_list | sort:"priority" | reverse | sort:"year" | reverse  %}
-{% assign genres = "chamber,electronic" | split: "," %}
+{% assign genres = "electronic,chamber" | split: "," %}
 {% assign genre_text = "N/A" %}
 
 <h2 class="title">
