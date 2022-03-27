@@ -29,13 +29,11 @@
 {% if genre == node.genre %}
 
 {% if group == null or group == node.group %}
-<div>
-  <div style="float:left">
-    <h3> <a href="{{ node.url }}">{{node.piece}}</a> - {{node.instrumentation}} | {{node.duration}} </h3>
-  </div>
-  <div style="float:right">
-    <h3>{{node.year}}</h3>
-  </div>
+<div class="title-style">
+<ul class="title-style">	
+  <li> <h3> <a href="{{ node.url }}">{{node.piece}}</a> - {{node.instrumentation}} | {{node.duration}} </h3> </li>
+  <li> <h3>{{node.year}}</h3> </li>
+</ul>
 </div>
 {{node.recording}}
 <div style="text-align:right">

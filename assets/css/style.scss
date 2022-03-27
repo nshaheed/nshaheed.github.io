@@ -174,3 +174,18 @@
 	// background-color: #2E2E2E;
     }
 }
+
+.title-style {
+		ul {
+				display: flex;
+				justify-content: space-between;
+				list-style-type: none;
+				list-style-image: none;
+				margin: 0;
+				padding: 0;
+		}
+		li {
+		}
+}
+
+

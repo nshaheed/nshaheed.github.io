@@ -5,7 +5,7 @@ year: 2017
 duration: "Improvised"
 instrumentation: "Live Electronics"
 score: ""
-recording: <iframe src="https://player.vimeo.com/video/376294237" width="100%" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+recording: <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/376294237?h=039108daac&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Chaotic Substrate"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 notes: "Premiered at Electronic Music Midwest 2017. Kansas City, KS"
 genre: "electronic"
 group: "piece"
