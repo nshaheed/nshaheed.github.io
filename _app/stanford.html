@@ -1,0 +1,195 @@
+---
+layout: app
+header: "Portfolio - CCRMA PhD"
+---
+<!-- 
+Things to add
+
+Works
+- [DONE] mirror
+  - [DONE] explain what the collaborationw as
+  - [DONE] mention made with ganimator
+- [DONE] there will be something missing
+  - [DONE] link to score
+- [DONE] in this place
+  - [DONE] description
+- [DONE] wire spill
+  - [DONE] link to score
+
+Tools and Software
+- [DONE] ganimator
+  - [DONE] link to github
+  - [DONE] explination
+- [TODO] d_Jai
+  - [TODO] link to later
+  - [TODO] video + 256 site
+- [TODO] autocoder expanded
+  - [TODO] description
+  - [TODO] github link
+  - [TODO] link to paper
+  - 
+- [TODO] chuck contributions
+  - [TODO] summarize key contributions between chuck, chugins, 220a repos
+  - [TODO] link to pull requests, summarize, etc
+
+ -->
+<div style="text-align:justify">
+	<h3> Hello, </h3>
+  <h3>
+    Below is my portfolio for my application to the PhD in Computer-Based Music Theory and Acoustics.
+    This includes recordings and videos of works, and links to software and tools.
+  </h3>
+</div>
+
+<p style="margin-bottom:1cm;"></p>
+
+<h1 style="text-align:center;font-size:400%">Works</h1>
+<p style="margin-bottom:1cm;"></p>
+
+<div>
+  <h2> There Will Be Something Missing — Flute, Baritone Haegeum, Percussion & Electronics  </h2>
+</div>
+<iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1401644587&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+  width="640" height="180" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<div style="text-align:left">
+  <h3>
+  <a href="https://drive.google.com/file/d/14yKg11De6JZ7sMLg__bSvz1EWbsR_ZDA/view?usp=sharing">Score</a>
+  </h3>
+  Premiered by Camilo Nunas Ángeles Manga, Jeonghyeon Joo, and Sae Hashimoto. 
+  The DiMenna Center for Classical Music, NYC. June 23, 2022
+</div>
+
+<p style="margin-bottom:2cm;"></p>
+
+<div>
+  <h2> mirror — Live Electronics and Video </h2>
+</div>
+<iframe src="https://player.vimeo.com/video/762363875?h=6cc6db5a94&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+<i>mirror</i> was made in collaboration with AI artist Lia Coleman. Lia trained 
+a Generative Adversarial Network (GAN) that can generate infinitely many self-portraits. I then used this model to create an
+audiovisual instrument that I improvise with. The animations were created using the GANimator 
+software I created (more information in the Software and Tools section).
+
+<p style="margin-bottom:2cm;"></p>
+<div>
+  <h2> in this place. —   Fixed Media </h2>
+</div>
+<iframe src="https://player.vimeo.com/video/689428658?h=389d23f9c6&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+<i>in this place</i> channels a sense of stillness from continuous motion. 
+As the periphery of the space continuously moves inward, small, fine details shift
+around in an immutable atmosphere.
+
+<p style="margin-bottom:2cm;"></p>
+<div>
+  <h2> Wire Spill - Kalimba, Electronics, and Video </h2>
+</div>
+<iframe src="https://player.vimeo.com/video/434206530" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<div style="text-align:left">
+  <a href="https://drive.google.com/file/d/1R1Kw7aCkkrhvqmRd-RjwkRerthN7U78e/view?usp=sharing">Score</a>
+</div>
+
+<p style="margin-bottom:2cm;"></p>
+
+<h1 style="text-align:center;font-size:400%">Software and Tools</h1>
+
+<p style="margin-bottom:1cm;"></p>
+
+<div>
+  <h2> GANimator — Live, Interactive Animation With Generative Adversarial Networks </h2>
+</div>
+
+<h3>
+  <a href="https://github.com/nshaheed/GANimator">Github Page</a>
+</h3>
+
+<p>
+GANimator is a tool for the ChucK programming language to create live, interactive 
+animation using generative adversarial networks (GANs). Developed in Python and ChucK, 
+it enables powerful, image generating machine learning models to be used to make
+real-time animations. A simple interface allows for easy manipulation of these complex
+models, emphasizing fine-grained control of framerates/timing and the ability to
+build complex animations from simple components.
+
+<p>
+GANimator was used to create the animation for <i>mirror</i>, shown above.
+
+<p style="margin-bottom:2cm;"></p>
+
+<h2> RAVE Chugin </h2>
+
+<h3>
+  <a href="https://github.com/nshaheed/chugins/tree/rave">Github Page</a>
+</h3>
+
+Created a Chugin for the 
+<a href="https://github.com/acids-ircam/RAVE">Realtime Audio Variational autoEncoder</a>
+(RAVE). This Chugin lets you run these ML models for high-quality generative audio in real-time in
+ChucK. <a href="https://ccrma.stanford.edu/~nshaheed/sounds/lfo_cello.wav">Here</a> is
+a piece I composed using this Chugin.
+
+<p style="margin-bottom:2cm;"></p>
+
+
+<div>
+  <h2> ChucK Contributions </h2>
+</div>
+
+<!-- 
+  - 220a
+    - improve mic usability & migrate from deprecated features in 220a WebChuck code
+    - https://github.com/ccrma/music220a/pulls?q=author%3Anshaheed
+
+  - chugins
+    - Document Chuginate, the ChuGin template generator
+      - https://github.com/ccrma/chugins/commit/e8ab753c8f7de618010ac62bad521bb3738dff48
+    - Migrate chuginate header templates to chugin v8.0 (outdated chugin version caused compatibility issues)
+
+
+
+  - chuck main
+    - shred.realtime() - detect whether a shrun in running in realtime mode
+      - https://github.com/ccrma/chuck/pull/230
+    - fixed debug builds on linux
+      - https://github.com/ccrma/chuck/pull/223
+    - begain investigations into auto-dependency management
+      - https://github.com/ccrma/chuck/pull/222
+    - added arr.getKey() to fetch all keys in an associative array
+      - https://github.com/ccrma/chuck/pull/217 
+    - Performed code reviews on pull requests:
+      - https://github.com/ccrma/chugins/pull/51
+      - https://github.com/ccrma/chuck/pull/200 
+    - Fixed broken examples
+      - https://github.com/ccrma/chuck/pull/207
+    - actively document bugs/future improvements
+      - https://github.com/ccrma/chuck/issues?q=author%3Anshaheed+is%3Aissue
+    - code cleanup
+      - 1 https://github.com/ccrma/chuck/pull/231
+      - 2 https://github.com/ccrma/chuck/pull/224
+ -->
+<h3>ChucK Core</h3>
+<ul>
+  <li><a href="https://github.com/ccrma/chuck/pull/217">added</a> arr.getKey() to fetch all keys in an associative array</li>
+  <li><a href="https://github.com/ccrma/chuck/pull/230">added</a> shred.realtime() - detect whether a shrun in running in realtime mode</li>
+  <li><a href="https://github.com/ccrma/chuck/pull/222">began investigations</a> into auto-dependency management</li>
+  <li><a href="https://github.com/ccrma/chuck/pull/223">fixed</a> debug builds on linux</li>
+  <li>performed code reviews on pull requests [<a href="https://github.com/ccrma/chugins/pull/51">1</a>, <a href="https://github.com/ccrma/chuck/pull/200 ">2</a>]</li>
+  <li><a href="https://github.com/ccrma/chuck/pull/207">fixed</a> broken examples</li>
+  <li>actively <a href="https://github.com/ccrma/chuck/issues?q=author%3Anshaheed+is%3Aissue">document</a> bugs/future improvements</li>
+  <li>code cleanup [<a href="https://github.com/ccrma/chuck/pull/231">1</a>, <a href="https://github.com/ccrma/chuck/pull/224">2</a>]</li>
+</ul>
+
+<h3>Chugins</h3> 
+<ul>
+  <li><a href="https://github.com/ccrma/chugins/commit/e8ab753c8f7de618010ac62bad521bb3738dff48">document</a> Chuginate, the ChuGin template generator</li>
+  <li><a href="https://github.com/ccrma/chugins/pull/57">migrate</a> Chuginate header templates to chugin v8.0 (outdated chugin version caused compatibility issues)</li>
+</ul>
+
+<h3>220a Codebase</h3> 
+<ul>
+  <li><a href="https://github.com/ccrma/music220a/pulls?q=author%3Anshaheed">improve</a> mic usability & migrate from deprecated features in 220a WebChuck code</li>
+</ul>
+<p style="margin-bottom:2cm;"></p>
+
+
